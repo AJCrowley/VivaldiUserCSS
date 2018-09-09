@@ -1,0 +1,43 @@
+.button-toolbar.home {
+	display: none
+}
+
+.startpage .dial .thumbnail-image {
+  background-color: transparent;
+}
+
+.tabs-top .tab-position .tab:not(.pinned) {
+    border-radius: 6px 24px 0 0;
+}
+
+#browser .tab-position .tab.pinned {
+    border-radius: 6px 6px 0 0;
+}
+
+.tab-header .favicon, .tab-header .close {
+	display: block !important;
+}
+
+.tab-header .close {
+	order: 1 !important;
+	margin-right: 5px;
+    background-color: transparent;
+}
+
+#browser .tab-position .tab.active {
+    background: linear-gradient(to top, var(--colorAccentBg) 0%, var(--colorBg) 100%);
+    color: inherit;
+    fill: inherit;
+    border: 1px solid var(--colorAccentBg);
+    border-bottom: none;
+}
+
+.toolbar .addressfield,
+.toolbar .searchfield {
+    border-radius: 16px;
+}
+
+.toolbar-addressbar .button-toolbar.browserAction-button,
+.toolbar-mailbar .button-toolbar.browserAction-button {
+	background-color: transparent;
+}
