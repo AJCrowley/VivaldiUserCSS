@@ -31,17 +31,24 @@
 
 /* Give tabs a border and gradient for accent colour */
 #browser .tab-position .tab.active {
-    background: linear-gradient(to top, var(--colorAccentBg) 0%, var(--colorBg) 100%);
+    background-image: linear-gradient(to top, var(--colorAccentBg) 0%, var(--colorBg) 100%);
     color: inherit;
     fill: inherit;
     border: 1px solid var(--colorAccentBg);
     border-bottom: none;
 }
 
+/* Give address bar a border and a gradient for accent colour */
+.color-behind-tabs-off .toolbar-addressbar {
+    background-image: linear-gradient(to bottom, var(--colorAccentBg) 0%, var(--colorBg) 100%);
+    border: 1px solid var(--colorAccentBg);
+    border-bottom: 1px solid var(--colorAccentBg);
+}
+
 /* round corners for address and search boxes */
 .toolbar .addressfield,
 .toolbar .searchfield {
-    border-radius: 16px;
+    border-radius: 7px;
 }
 
 /* lose weird background on extension buttons */
